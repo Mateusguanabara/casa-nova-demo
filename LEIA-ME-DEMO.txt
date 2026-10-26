@@ -1,1 +1,0 @@
-Versão de demonstração sem conexão Firebase no frontend. Para impedir reservas no site antigo ainda publicado, publique manualmente as novas regras de firestore.rules no Firebase Console. Faça backup antes e verifique se o banco é usado por outros sites. A alteração das regras não é automática pelo GitHub. Teste no Go Live antes de publicar.
