@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e1e1e">
+  <title>Chá de Casa — Lara & João Gabriel</title>
+  <meta name="description" content="Demonstração do site de Chá de Casa de Lara e João Gabriel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-background" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-leaf leaf-left" aria-hidden="true">❧</div>
+    <div class="hero-leaf leaf-right" aria-hidden="true">❧</div>
+
+    <div class="hero-content reveal">
+      <p class="hero-small">Você é nosso convidado especial</p>
+      <span class="heart-line" aria-hidden="true">— ♡ —</span>
+      <p class="hero-event" id="tituloEvento">Chá de Casa</p>
+      <h1 class="couple"><span id="nome1">Lara</span> <b>&</b> <span id="nome2">João Gabriel</span></h1>
+      <div class="gold-divider" aria-hidden="true"><span></span>♡<span></span></div>
+      <p class="hero-message">Estamos felizes em compartilhar<br>esse momento especial com você!</p>
+      <a class="scroll-cue" href="#contagem" aria-label="Ver detalhes do evento">⌄</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="contagem" class="section countdown-section">
+      <div class="section-inner reveal">
+        <div class="section-heading"><span></span><p>Faltam</p><span></span></div>
+        <div class="countdown" aria-label="Contagem regressiva demonstrativa">
+          <div><strong id="days">00</strong><small>Dias</small></div>
+          <div><strong id="hours">00</strong><small>Horas</small></div>
+          <div><strong id="minutes">00</strong><small>Minutos</small></div>
+          <div><strong id="seconds">00</strong><small>Segundos</small></div>
+        </div>
+        <p id="countdownMessage" class="countdown-message"></p>
+      </div>
+    </section>
+
+    <section class="section details-section" id="detalhes">
+      <div class="section-inner reveal">
+        <div class="event-grid">
+          <article><span class="round-icon">▣</span><strong>Data</strong><p id="dataExibicao">26 de dezembro de 2026</p></article>
+          <article><span class="round-icon">◷</span><strong>Horário</strong><p id="horario">18h30</p></article>
+          <article><span class="round-icon">⌖</span><strong>Local</strong><p id="endereco">Rua São Francisco, nº 1030</p></article>
+        </div>
+        <div class="route-card">
+          <div><span class="route-icon">⌖</span><div><strong>Como chegar</strong><p>Clique no botão para abrir o endereço no mapa.</p></div></div>
+          <a id="rotaBtn" class="button" target="_blank" rel="noopener noreferrer">Como chegar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gifts-section" id="presentes">
+      <div class="section-inner wide reveal">
+        <div class="section-heading"><span></span><p>🎁 Lista de presentes</p><span></span></div>
+        <p class="gift-intro">Conheça alguns dos presentes escolhidos para compor nosso novo lar. Esta lista é apenas demonstrativa e não aceita reservas.</p>
+        <div id="firebaseStatus" class="firebase-status connecting" role="status" aria-live="polite">Projeto demonstrativo — reservas encerradas</div>
+        <div class="gift-tools">
+          <input id="giftSearch" type="search" placeholder="Buscar presente..." aria-label="Pesquisar presente">
+          <span id="giftCount"></span>
+        </div>
+        <div id="giftList" class="gift-list"></div>
+      </div>
+    </section>
+
+    <section class="section palette-section" id="paleta">
+      <div class="section-inner reveal">
+        <div class="section-heading"><span></span><p>Paleta de cores</p><span></span></div>
+        <p class="palette-text">Para combinar com a nossa casa, sugerimos presentes nos tons abaixo.</p>
+        <div class="palette-grid" aria-label="Paleta de cores sugerida">
+          <div><i class="swatch bamboo"></i><strong>Bambu</strong><small>#C8A97E</small></div>
+          <div><i class="swatch white"></i><strong>Branco</strong><small>#FFFFFF</small></div>
+          <div><i class="swatch gray"></i><strong>Cinza</strong><small>#A6A6A6</small></div>
+          <div><i class="swatch black"></i><strong>Preto</strong><small>#1E1E1E</small></div>
+        </div>
+      </div>
+    </section>
+    <section class="section gratitude-section" id="mensagem">
+      <div class="section-inner reveal">
+        <div class="gratitude-card">
+          <span class="gratitude-symbol" aria-hidden="true">♡</span>
+          <div class="section-heading"><span></span><p>Com carinho</p><span></span></div>
+          <h2>Um novo capítulo, cheio de amor</h2>
+          <p>Cada detalhe desse novo lar foi pensado com carinho. Obrigado por fazer parte da nossa história e tornar esse momento ainda mais especial!</p>
+          <div class="gratitude-signature">Lara &amp; João Gabriel</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span aria-hidden="true">— ♡ —</span>
+    <p>A sua presença já é o nosso maior presente!</p>
+    <small><span id="assinatura1">Lara</span> &amp; <span id="assinatura2">João Gabriel</span></small>
+    <div class="footer-separator" aria-hidden="true"></div>
+    <p class="footer-demo">Projeto demonstrativo · Reservas encerradas</p>
+    <p class="footer-credit">Desenvolvido por <strong>Mateus Dias Miranda</strong></p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
