@@ -1,5 +1,7 @@
 # 🏡 Casa Nova | Projeto Demonstrativo
 
+![Prévia do site Casa Nova](preview.png)
+
 Site de Chá de Casa desenvolvido para proporcionar uma experiência digital elegante, interativa e responsiva.
 
 🔗 **[Visualizar projeto online](https://mateusguanabara.github.io/casa-nova-demo/)**
